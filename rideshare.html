@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rideshare</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <style>
+    .navbar-brand {
+      letter-spacing: 0.25rem;
+      font-weight: bold;
+    }
+
+    .carousel-item {
+      height: auto;
+      position: relative;
+    }
+
+    .carousel-caption {
+      position: absolute;
+      top: 70%;
+      left: 0;
+      right: 0;
+    }
+
+    .card img {
+      width: 200px;
+      align-self: center;
+    }
+
+    .video {
+      position: relative;
+      overflow: hidden;
+      width: 100%;
+      padding-top: 56.25%;
+    }
+
+    .responsive {
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      width: 100%;
+      height: 100%;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-success fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">BD BIKESHARE</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#pricing">Pricing</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                Services
+              </a>
+              <ul class="dropdown-menu mt-2" aria-labelledby="navbarDropdownMenuLink">
+                <li><a class="dropdown-item text-success" href="#">Bike Ride</a></li>
+                <li><a class="dropdown-item text-success" href="#">Car Ride</a></li>
+                <li><a class="dropdown-item text-success" href="#">Auto Taxi Ride</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="btn btn-light ms-2" href="#">Login</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+            aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+            aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img class="img-fluid d-block" src="./beeline-navigation-BL6lx15Igyw-unsplash.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-sm-block d-md-block">
+              <h1 class="display-2">Getting Late?</h1>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img class="img-fluid d-block" src="./markus-winkler-29luexl03H4-unsplash.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h1>Need to hurry up! Need a bike card or auto ride share</h1>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img class="img-fluid d-block" src="./nextbike-jy1WLg4XwOY-unsplash.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h1>We are always here for only you to reach your destination</h1>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+
+    <section class="container my-4" id="pricing">
+      <div class="row row-cols-1 row-cols-md-4 g-4">
+        <div class="col">
+          <div class="card h-100 shadow">
+            <img src="./svs/bike.svg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Bike Ride</h5>
+              <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio tenetur,
+                perspiciatis eaque delectus similique sed, sequi dolorum beatae excepturi provident.</p>
+              <a href="#" class="btn btn-lg btn-success">200TK</a>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">Last updated 3 mins ago</small>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 shadow">
+            <img src="./svs/car.svg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Car Ride</h5>
+              <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio tenetur,
+                perspiciatis eaque delectus similique sed, sequi dolorum beatae excepturi provident.</p>
+              <a href="#" class="btn btn-lg btn-success">300TK</a>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">Last updated 3 mins ago</small>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 shadow">
+            <img src="./svs/autorickshaw.svg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Autorickshaw Ride</h5>
+              <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio tenetur,
+                perspiciatis eaque delectus similique sed, sequi dolorum beatae excepturi provident.</p>
+              <a href="#" class="btn btn-lg btn-success">100TK</a>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">Last updated 3 mins ago</small>
+            </div>
+          </div>
+        </div>
+        <div class="col d-sm-none d-md-block">
+          <div class="card h-100 shadow">
+            <img src="./svs/autorickshaw.svg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Autorickshaw Ride</h5>
+              <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio tenetur,
+                perspiciatis eaque delectus similique sed, sequi dolorum beatae excepturi.</p>
+              <a href="#" class="btn btn-lg btn-success">100TK</a>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">Last updated 3 mins ago</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="w-50 mx-auto my-4">
+      <h1 class="display-3 text-center">Email Us</h1>
+      <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Email address</label>
+        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+      </div>
+      <div class="mb-3">
+        <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
+        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+      </div>
+      <a href="#" class="btn btn-success d-block mx-auto">Send</a>
+    </section>
+
+    <section class="video container my-4 rounded">
+      <iframe class="responsive" width="727" height="409" src="https://www.youtube.com/embed/LjZH_W-1JPM"
+        title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
+    </section>
+  </main>
+
+  <footer class="bg-success text-center text-light p-4 rounded-top">
+    <small>Copyright &copy; 2021. All rights reserved. Forhad & Noyon</small>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+  </script>
+</body>
+
+</html>
